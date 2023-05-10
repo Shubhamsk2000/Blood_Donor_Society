@@ -1,12 +1,9 @@
-
 #hero {
-  /* padding-inline: 5rem; */
   height: 80svh;
   top: 4.5rem;
   position: relative;
   background-color: rgb(255, 83, 83);
   border-radius: 0% 0% 30% 75%;
-  /* margin-top: 5rem; */
 }
 
 .heroContent {
@@ -64,17 +61,20 @@
 
 .card {
   width: 250px;
-  aspect-ratio: 2/3;
+  position: relative;
+  height: 300px;
   cursor: pointer;
   border-radius: 24px 24px 0 0;
   overflow: hidden;
   border: 2px solid black;
 }
 
-.card span {
+.span {
+  position: absolute;
   height: 30%;
   width: 100%;
-  background-color: #4b4646;
+  background-color: #00000078;
+  backdrop-filter: blur(10px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,42 +82,57 @@
   text-align: center;
   color: white;
   font-size: 20px;
+  transition: all 0.3s;
 }
-
-.card-1 {
-  background: url("../assets/cards/card-1.png") ;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+.card:hover .span{
+  height: 100%;
 }
-.card-2 {
-  background: url("../assets/cards/card-2.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+.images {
+  position: relative;
+  top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  z-index: -1;
 }
-.card-3 {
-  background: url("../assets/cards/card-3.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.card-4 {
-  background: url("../assets/cards/card-4.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 
 
 /* eligibility css */
-.eligible{
+.eligible {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
   /* padding-inline:6rem ;
   padding: 6rem;  */
+}
 
+/* footer css */
+.footer-content {
+  background-color: #4b4646;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 35px solid black;
+  padding: 3rem;
+}
+
+#from-us-footer {
+  width: 20rem;
+  background-color: #d9d9d9;
+  padding: 1rem;
+  border-radius: 50px 0 50px 0;
+  text-align: center;
+}
+
+#from-us-footer h3 {
+  color: red;
+  font-size: 30px;
+}
+
+#copyright-footer {
+  text-align: center;
+  background-color: black;
+  color: white;
 }

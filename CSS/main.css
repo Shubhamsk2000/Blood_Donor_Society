@@ -12,7 +12,6 @@ html{
   box-sizing: border-box;
 }
 
-
 nav{
   padding:0px 48px ;
   padding-top: 8px;
@@ -241,7 +240,7 @@ transition: all 0.5s;
 
 #preloader{
   position: fixed;
-  background:#fff url("../../assets/preloader.gif") no-repeat center;
+  background:#fff url("../assets/preloader.gif") no-repeat center;
   background-size: 35%;
   height: 100vh;
   z-index: 1000;
