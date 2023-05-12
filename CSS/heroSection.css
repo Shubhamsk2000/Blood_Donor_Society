@@ -1,6 +1,6 @@
 #hero {
-  height: 80svh;
-  top: 4.5rem;
+  height: 90svh;
+  top: 4.3rem;
   position: relative;
   background-color: rgb(255, 83, 83);
   border-radius: 0% 0% 30% 75%;
@@ -9,7 +9,7 @@
 .heroContent {
   position: relative;
   display: flex;
-  gap: 4rem;
+  gap: 2rem;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
@@ -23,11 +23,12 @@
 .heroContent h1 {
   font-size: 50px;
   position: relative;
-  /* left: 5rem; */
+  /* border: 2px solid black; */
 }
 
 .bottomLine {
-  height: 40px;
+  /* height: 40px; */
+  padding: 0.4rem 0.5rem;
   position: absolute;
   bottom: 0;
   background-color: black;
@@ -42,6 +43,26 @@
 @media (max-width: 650px) {
   .heroContent {
     flex-direction: column;
+    padding: 3rem 1rem;
+  }
+  #hero {
+    top: 4rem;
+    border-radius: 0% 0% 0% 100%;
+  }
+  .heroContent img {
+    width: 100%;
+    max-width: 45rem;
+  }
+  .heroContent h1 {
+    font-size: 45px;
+    /* text-align: center; */
+  }
+  .text-white {
+    color: #000000;
+  }
+
+  .bottomLine {
+    display: none;
   }
 }
 
@@ -54,6 +75,7 @@
 
 .cards-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   gap: 1rem;
@@ -61,6 +83,7 @@
 
 .card {
   width: 250px;
+
   position: relative;
   height: 300px;
   cursor: pointer;
@@ -74,6 +97,7 @@
   height: 30%;
   width: 100%;
   background-color: #00000078;
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   display: flex;
   justify-content: center;
@@ -84,7 +108,7 @@
   font-size: 20px;
   transition: all 0.3s;
 }
-.card:hover .span{
+.card:hover .span {
   height: 100%;
 }
 .images {
@@ -97,24 +121,54 @@
   z-index: -1;
 }
 
+@media (max-width: 650px) {
+  .card {
+    width: 200px;
+    height: 250px;
+  }
+}
 
 /* eligibility css */
 .eligible {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-  /* padding-inline:6rem ;
-  padding: 6rem;  */
+  gap: 4rem;
+  width: 80%;
+  margin: auto;
+  padding: 1rem 0.3rem;
+}
+
+#info-eligible h2 {
+  font-size: 35px;
+  /* padding: 3rem 0rem;/ */
+}
+#info-eligible {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4rem;
+}
+#info-eligible ul {
+  font-size: 20px;
+}
+.img {
+  width: 100%;
+}
+
+@media (max-width: 650px) {
+  .eligible {
+    flex-direction: column;
+  }
 }
 
 /* footer css */
+
 .footer-content {
   background-color: #4b4646;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 35px solid black;
   padding: 3rem;
 }
 

@@ -1,7 +1,5 @@
-
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
-html{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap");
+html {
   scroll-behavior: smooth;
 }
 * {
@@ -12,25 +10,24 @@ html{
   box-sizing: border-box;
 }
 
-nav{
-  padding:0px 48px ;
+nav {
+  padding: 0px 48px;
   padding-top: 8px;
   box-shadow: 0px 0px 10px 1px black;
   position: fixed;
   width: 100%;
   z-index: 10;
   background-color: rgba(255, 254, 254, 0.497);
-  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 #navBar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width:1500px ;
-  margin:  auto;
-
+  max-width: 1500px;
+  margin: auto;
 }
 
 #logo {
@@ -38,17 +35,18 @@ nav{
   object-fit: contain;
 }
 
-.menu-items ul{
-  display:flex ;
+.menu-items ul {
+  display: flex;
   gap: 1.5rem;
   list-style-type: none;
 }
 
-.menu-items a{
+.menu-items a {
   text-decoration: none;
   color: black;
   font-size: 18px;
 }
+
 /* Hamaburger menu css */
 
 .menu-container {
@@ -88,46 +86,54 @@ nav{
   transform: translateY(-8px) rotate(-39deg);
 }
 
-/* wave css */
-
-@media(max-width:650px){
-  #logo{
+@media (max-width: 650px) {
+  nav{
+    
+    padding: 0px 30px;
+    padding-top: 8px;
+  }
+  #logo {
     height: 3rem;
   }
-  .menu-items{
-    position: absolute;
+  .menu-container {
+    display: flex;
+  }
+  .menu-items {
+    position: fixed;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     top: 4rem;
     right: 0;
-    background-color: rgba(255, 255, 255, 0.759);
+    background-color: rgba(255, 255, 255, 0.897);
     padding: 1rem;
     border-radius: 20px 0px 0px 20px;
-    width:50% ;
+    width: 50%;
     transform: translateX(100%);
-  transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
   }
-
-  .menu-items ul li{
+  .menu-items ul {
+    flex-direction: column;
+  }
+  .menu-items ul li {
     padding: 0.5rem;
     width: 100%;
     border-radius: 10px;
   }
-
-  .menu-items ul{
-    flex-direction: column;
+  .menu-items ul li a {
+    display: block;
+    font-size: 21px;
   }
-  /* displaying menu bar */
-  .menu-container{
-    display: flex;
-    
+  .menu-items ul li:nth-child(4) {
+    text-align: center;
   }
 }
-.transform{
+
+.transform {
   transform: translateX(0%);
 }
 
-
 /* Emergency button css and animation  */
-.emergencyButton{
+.emergencyButton {
   position: fixed;
   right: 0;
   bottom: 5rem;
@@ -139,23 +145,21 @@ nav{
   animation: heartbeat 3s infinite alternate;
   overflow: hidden;
   border: 2px solid black;
-  
 }
 
-.emergencyButton:hover::before{
+.emergencyButton:hover::before {
   transform: scale(1);
 }
-.emergencyButton a{
+.emergencyButton a {
   color: white;
   text-decoration: none;
-  
 }
 
-.emergencyButton:hover a{
+.emergencyButton:hover a {
   color: #000000;
   z-index: 10;
 }
-.emergencyButton::before{
+.emergencyButton::before {
   content: "";
   position: absolute;
   background-color: white;
@@ -163,35 +167,29 @@ nav{
   height: 100%;
   top: 0;
   left: 0;
-  z-index:-1;
-  border-radius:100%;
+  z-index: -1;
+  border-radius: 100%;
   transform: scale(0);
-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
-@keyframes heartbeat
-{
-  0%
-  {
-    transform: scale( 1 );
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
   }
-  33%
-  {
-    transform: scale( .8 );
+  33% {
+    transform: scale(0.8);
   }
-  66%
-  {
-    transform: scale( 1 );
+  66% {
+    transform: scale(1);
   }
-  100%
-  {
-    transform: scale(.8);
+  100% {
+    transform: scale(0.8);
   }
- 
 }
 /* Emergency button css and animation end */
 
-.btn{
+.btn {
   position: relative;
   top: 2rem;
   left: -2rem;
@@ -200,7 +198,6 @@ transition: all 0.5s;
   background-color: none;
   margin: 2rem;
   cursor: pointer;
-  /* border-radius: 30px; */
   padding: 1rem 2rem;
   text-decoration: none;
   transition: box-shadow 0.5s;
@@ -209,16 +206,20 @@ transition: all 0.5s;
   font-weight: 700;
 }
 
+.btn:nth-child(2){
+  left: -4rem;
+}
 
 .btn:hover {
   color: white;
   z-index: 10;
 }
-.btn:hover,.btn:active{
-  box-shadow:0px 10px 25px rgba(0, 0, 0, 0.5);
+.btn:hover,
+.btn:active {
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
 }
 
-.btn::before{
+.btn::before {
   content: "";
   width: 101%;
   height: 100%;
@@ -226,40 +227,58 @@ transition: all 0.5s;
   position: absolute;
   top: 0;
   left: 0;
-  z-index:-1;
+  z-index: -1;
   /* border-radius: 30px; */
   transform: scaleX(0);
   transition: all 0.5s;
   transform-origin: 0;
-
 }
 
-.btn:hover::before{
+.btn:hover::before {
   transform: scaleX(1);
 }
 
-#preloader{
+
+/* media query for btns */
+@media (max-width:650px){
+  #hero-btns{
+  display: flex;
+  flex-wrap: wrap;
+  }
+
+  .btn{
+    top: 0;
+    margin-top:0;
+    padding: 0.7rem 1.7rem;
+  }
+  .btn:nth-child(2){
+    left: -2rem;
+  }
+}
+
+
+
+#preloader {
   position: fixed;
-  background:#fff url("../assets/preloader.gif") no-repeat center;
+  background: #fff url("../assets/preloader.gif") no-repeat center;
   background-size: 35%;
   height: 100vh;
   z-index: 1000;
-  width: 100%
-
+  width: 100%;
 }
 
 /* common classes */
-.text-white{
+.text-white {
   color: #fff;
 }
-.log-in-border{
+.log-in-border {
   border: 2px solid #000000;
-  padding:5px 15px;
+  padding: 5px 15px;
   border-radius: 5px;
   transition: all 0.4s ease;
-
 }
-.log-in-border:hover{
+.log-in-border:hover {
   color: #fff;
   background-color: #000000;
 }
+

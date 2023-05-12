@@ -40,11 +40,14 @@
   <section id="hero">
 
     <div class="heroContent">
-      <img src="assets/homeImage.png" alt="">
+      <img src="assets/homeImage.png" alt="Blood Donor Society">
 
       <div>
         <h1><span class="text-white">Donate blood</span>,<br>be someone's reason to smile</h1>
-        <a href="#eligible" class="btn">Know More</a>
+        <div id="hero-btns">
+          <a href="/" class="btn login-btn-sm">Register</a>
+          <a href="#eligible" class="btn">Know More</a>
+        </div>
       </div>
     </div>
 
@@ -55,9 +58,9 @@
     </div>
 
   </section>
-  <div class="bottomLine">
+  <!-- <div class="bottomLine">
     <h3>"Saving a life doesn't require superpowers, just a generous heart to donate blood."</h3>
-  </div>
+  </div> -->
 
   <section id="cards-section">
     <div class="cards-container">
@@ -84,9 +87,9 @@
     <div class="eligible">
 
       <div>
-        <img src="assets/compatible-bloodType.png" alt="chart">
+        <img src="assets/compatible-bloodType.png" alt="chart" class="img">
       </div>
-      <div>
+      <div id="info-eligible">
         <h2>Who are Eligible to Donate Blood?</h2>
         <ul>
           <li>Age between 18 and 60 years</li>
@@ -98,12 +101,9 @@
         </ul>
       </div>
     </div>
-
-
   </section>
 
   <footer>
-
     <div class="footer-content">
       <div id="from-us-footer">
         <h3>From Us</h3>
@@ -117,7 +117,7 @@
     </div>
   </footer>
 
-  <script src="public/main.js"></script>
+  <script src="/main.js"></script>
 
   <script>
     var loader = document.getElementById("preloader");
