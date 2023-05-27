@@ -188,15 +188,18 @@ nav {
   }
 }
 /* Emergency button css and animation end */
+#hero-btns{
+display: flex;
+flex-wrap: wrap;
+}
 
 .btn {
   position: relative;
-  top: 2rem;
   left: -2rem;
   border: 2px solid black;
   font-size: 20px;
   background-color: none;
-  margin: 2rem;
+  margin:1rem 2rem;
   cursor: pointer;
   padding: 1rem 2rem;
   text-decoration: none;
@@ -207,7 +210,7 @@ nav {
 }
 
 .btn:nth-child(2){
-  left: -4rem;
+  left: -3rem;
 }
 
 .btn:hover {
@@ -241,11 +244,7 @@ nav {
 
 /* media query for btns */
 @media (max-width:650px){
-  #hero-btns{
-  display: flex;
-  flex-wrap: wrap;
-  }
-
+  
   .btn{
     top: 0;
     margin-top:0;
