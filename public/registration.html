@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register </title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/registerLogin.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="forms-container">
+            <div class="registration-login">
+
+                <form action="" class="login-form" id="login">
+                    <h2 class="title">Log In</h2>
+
+                    <div class="input-field">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="text" placeholder="Username">
+                    </div>
+
+                    <div class="input-field">
+                        <span class="material-symbols-outlined">key</span>
+                        <input type="password" placeholder="Password">
+                    </div>
+
+                    <input type="submit" value="log in" class="btn solid">
+
+                </form>
+
+                <form action="" class="registration-form" id="registration">
+                    <h2 class="title">Registration</h2>
+
+                    <div class="input-field">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="text" placeholder="Name">
+                    </div>
+
+                    <div class="input-field">
+                        <span class="material-symbols-outlined">mail</span>
+                        <input type="email" placeholder="Email">
+                    </div>
+
+                    <div class="input-field">
+                        <span class="material-symbols-outlined">key</span>
+                        <input type="password" placeholder="Password">
+                    </div>
+
+                    <input type="submit" value="Sign up" class="btn solid">
+
+                </form>
+            </div>
+        </div>
+
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h2>New Here ? </h2>
+                 <button class="btn transparent" id="registration-btn"
+                 >Register Now</button>
+                </div>
+                <img src="../assets/welcome.svg" alt="Welcome">
+            </div>
+
+            <div class="panel right-panel">
+                <div class="content">
+                    <h2>One of Us ? </h2>
+                  <button class="btn transparent" id="login-btn"
+                          
+                  >LogIn Now</button>
+                </div>
+                <img src="../assets/login.svg" alt="login now">
+            </div>
+        </div>
+    </div>
+    <script>
+        const registerBtn = document.querySelector("#registration-btn");
+        const loginBtn = document.querySelector("#login-btn");
+        const container = document.querySelector(".container");
+
+        registerBtn.addEventListener('click', () => {
+            container.classList.add("registration-mode")
+        });
+        loginBtn.addEventListener('click', () => {
+            container.classList.remove("registration-mode")
+        })
+
+      
+    </script>
+</body>
+
+</html>

@@ -25,3 +25,4 @@ window.addEventListener("scroll", ()=>{
     let value = window.scrollY;
     heroContent.style.transform = `translateY(${value * -0.5}px)`;
 })
+
