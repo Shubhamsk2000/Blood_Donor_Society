@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap");
 html {
   scroll-behavior: smooth;
 }
@@ -231,7 +230,6 @@ flex-wrap: wrap;
   top: 0;
   left: 0;
   z-index: -1;
-  /* border-radius: 30px; */
   transform: scaleX(0);
   transition: all 0.5s;
   transform-origin: 0;
@@ -254,8 +252,6 @@ flex-wrap: wrap;
     left: -2rem;
   }
 }
-
-
 
 #preloader {
   position: fixed;

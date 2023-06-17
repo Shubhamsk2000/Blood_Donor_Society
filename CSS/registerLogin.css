@@ -24,6 +24,36 @@
     z-index: 6;
 }
 
+/* go back btn css start*/
+#home-return {
+    position: absolute;
+    z-index: 100;
+    top: 2rem;
+    left: 2rem;
+}
+
+#home-return a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-return span:nth-child(1) {
+    font-size: 3rem;
+}
+
+
+@media (max-width:680px) {
+    #home-return {
+       left: 0rem;
+       top: 0rem;
+    }
+}
+/* go back btn css end */
+
 .forms-container {
     position: absolute;
     width: 100%;
@@ -142,8 +172,9 @@ form.registration-form {
     transition: 0.9s 0.6s ease-in-out;
 }
 
+
 .panel h2 {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 2rem;
     margin-bottom: 2rem;
 }
