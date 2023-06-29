@@ -8,8 +8,19 @@
   <link rel="stylesheet" href="CSS/main.css">
   <link rel="stylesheet" href="CSS/heroSection.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    #preloader {
+      position: fixed;
+      background: #fff url("../assets/preloader.gif") no-repeat center;
+      background-size: 35%;
+      height: 100vh;
+      z-index: 1000;
+      width: 100%;
+    }
+  </style>
   <title>Blood Donor Society</title>
 </head>
 
@@ -19,14 +30,14 @@
     <nav>
       <div id="navBar">
         <div>
-          <a href=""><img id="logo" src="assets/logo.png" draggable="false" alt="Blood Donor Society"></a>
+          <a href="/"><img id="logo" src="assets/logo.png" draggable="false" alt="Blood Donor Society"></a>
         </div>
 
         <div class="menu-items">
           <ul>
             <li><a href="">Need Blood</a></li>
+            <li><a href="public/bloodbanks.html">Blood Banks</a></li>
             <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
             <li><a href="/register" class="log-in-border">Log In</a></li>
           </ul>
         </div>
@@ -43,13 +54,16 @@
   <section id="hero">
 
     <div class="heroContent">
-      <img src="assets/homepage.webp" draggable="false" alt="Blood Donor Society">
+
+      <img class="taglineHidden" src="assets/homepage.webp" draggable="false" alt="Blood Donor Society">
 
       <div>
-        <h1><span class="text-white">Donate blood</span>, be someone's reason to smile</h1>
+        <div class="heading">
+          <h1 class="taglineHidden"><span class="text-white">Donate blood</span>, be someone's reason to smile</h1>
+        </div>
         <div id="hero-btns">
-          <a href="/register" class="btn login-btn-sm">Register</a>
-          <a href="#eligible" class="btn">Know More</a>
+          <a href="/register" class="btn login-btn-sm taglineHidden">Register</a>
+          <a href="#eligible" class="btn taglineHidden">Know More</a>
         </div>
       </div>
     </div>
@@ -61,41 +75,157 @@
     </div>
 
   </section>
-  
-  <section id="cards-section">
-    <div class="cards-container">
-      <div class="card-1 card">
-        <span class="span">Blood Bank Directory</span>
-        <div class="images"><img src="assets/cards/card-1.png" alt="Blood Bank Directory" loading="lazy"></div>
+
+<!-------- health benefits section starts --------->
+
+  <section class="health-benefits-section">
+    <div class="health-section-container">
+      <div class="left-area">
+
+        <div class="flex">
+          <h2 class="taglineHidden">01. Reduces the risk of heart disease:</h2>
+          <p class="taglineHidden">Regular blood donation has been associated with a lower risk of cardiovascular
+            diseases. Donating blood
+            helps maintain healthy blood viscosity and reduces the level of iron in the body. High iron levels have been
+            linked to an increased risk of heart disease, so regular blood donation can help reduce that risk.</p>
+        </div>
+
+        <div class="flex">
+          <h2 class="taglineHidden">02. Stimulates the production of new blood cells: </h2>
+          <p class="taglineHidden"> After donating blood, the body works to replenish the lost blood cells. This process
+            stimulates the
+            production of new blood cells in the bone marrow, leading to the regeneration and rejuvenation of the body's
+            blood supply. This can have a positive impact on overall health and well-being.</p>
+        </div>
+
+        <div class="flex">
+          <h2 class="taglineHidden">03. Provides a free health check-up: </h2>
+          <p class="taglineHidden"> Prior to donating blood, donors undergo a thorough screening process that includes
+            blood pressure
+            measurement, hemoglobin level testing, and other health assessments. This provides an opportunity to
+            identify any potential health issues or abnormalities that may require further medical attention. It can
+            serve as a basic health check-up and help donors stay aware of their well-being.</p>
+        </div>
+
+        <div class="flex">
+          <h2 class="taglineHidden">04. Promotes psychological well-being:</h2>
+          <p class="taglineHidden"> Engaging in acts of altruism, such as donating blood, has been linked to improved
+            psychological
+            well-being. Donating blood can evoke a sense of purpose, fulfillment, and satisfaction, knowing that you
+            have made a meaningful contribution to the health and well-being of others. It can also create a sense of
+            community and connectedness with fellow donors and recipients.</p>
+        </div>
+
+        <div class="flex">
+          <h2 class="taglineHidden">05. Improves Blood Circulation: </h2>
+          <p class="taglineHidden">When you donate blood, your body replenishes the donated blood by producing new blood
+            cells. This process
+            helps to improve blood circulation throughout the body, promoting better oxygen and nutrient delivery to
+            various organs and tissues. Improved blood circulation can have positive effects on overall health and
+            vitality.</p>
+        </div>
       </div>
-      
-      <div class="card-4 card">
-        <span class="span">Blood Donation Camp</span>
-        <div class="images"><img src="assets/cards/card-4.png" alt="lood Donation Camp" loading="lazy"></div>
+
+      <div class="right-area">
+        <div>
+          <h2 class="taglineHidden"> key benefits of blood donation:</h2>
+          <div class="img-container">
+            <img src="assets/health-benefits/01.jpg" alt="">
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
+<!-------- health benefits section ends --------->
+
 
   <section id="eligible">
     <div class="eligible">
 
-      <div>
-        <img src="assets/compatible-bloodType.png" alt="chart" class="img">
+      <div class="heading">
+        <img src="assets/compatible-bloodType.png" alt="chart" class="img taglineHidden ">
       </div>
       <div id="info-eligible">
-        <h2>Who are Eligible to Donate Blood?</h2>
-        <ul>
-          <li>Age between 18 and 60 years</li>
-          <li>Haemoglobin - not less than 12.5 g/Dl</li>
-          <li>Pulse - between 50 and 100/minute with no irregularities</li>
-          <li>Blood Pressure -Systolic 100-180 mm Hg and Diastolic 50 - 100 mm Hg</li>
-          <li>Temperature - Normal (oral temperature not exceeding 37.50C)</li>
-          <li>Body weight - not less than 45 Kg</li>
-        </ul>
+        <div class="heading">
+          <h2 class="taglineHidden">Who are Eligible to Donate Blood?</h2>
+        </div>
+        <div class="heading">
+          <ul class="taglineHidden">
+            <li>Age between 18 and 60 years</li>
+            <li>Haemoglobin - not less than 12.5 g/Dl</li>
+            <li>Pulse - between 50 and 100/minute with no irregularities</li>
+            <li>Blood Pressure -Systolic 100-180 mm Hg and Diastolic 50 - 100 mm Hg</li>
+            <li>Temperature - Normal (oral temperature not exceeding 37.50C)</li>
+            <li>Body weight - not less than 45 Kg</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- blood donation process -->
+  <section class="registration-process flex">
+    <div class="div-container flex">
+      <div div class="heading">
+        <h2 class="taglineHidden ">Blood Donation Process</h2>
+      </div>
+      <ul class="flex">
+
+        <li class="single-donation-process flex hidden">
+          <span class="number">01</span>
+          <h3 class="title">Registration</h3>
+        </li>
+
+        <li class="single-donation-process flex hidden">
+          <span class="number">02</span>
+          <h3 class="title">Screening</h3>
+        </li>
+
+        <li class="single-donation-process flex hidden">
+          <span class="number">03</span>
+          <h3 class="title">Donation</h3>
+        </li>
+
+        <li class="single-donation-process flex hidden">
+          <span class="number">04</span>
+          <h3 class="title">Rest</h3>
+        </li>
+
+      </ul>
+
+    </div>
+  </section>
+
+  <section class="recovery-time-section flex">
+    <div class="recovery-container flex">
+      <div class="recovery-left-area">
+        <div class="heading">
+          <h3 class="taglineHidden">Recovery and Time Between Donations.</h3>
+        </div>
+        <div class="heading">
+          <p class="taglineHidden">A blood transfusion can be a life saving treatment for patients with cancer, patients
+            undergoing surgery,
+            children with severe anaemia, women who have complications</p>
+        </div><br>
+        <div class="heading">
+          <p class="taglineHidden">You must wait at least eight weeks (56 days) between donations of whole blood and 16
+            weeks (112 days)
+            betwen
+            power Red donations Platelet apheresis donor may give every 7 days up to 24 times per year after a donation.
+            Most peoples haemoglobin levels are back to normal after 6 to 12 weeks.
+          </p>
+        </div>
+      </div>
+
+      <div class="recovery-right-area">
+        <img src="assets/recovery.png" alt="" class="rightHidden">
+      </div>
+    </div>
+
+  </section>
+
+  <!--------- footer starts  --------->
   <footer>
     <div id="footer-cross"></div>
     <div class="footer-content">
@@ -119,7 +249,5 @@
       loader.style.display = "none";
     })
   </script>
-
 </body>
-
 </html>

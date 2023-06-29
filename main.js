@@ -23,7 +23,35 @@ let heroContent = document.getElementsByClassName("heroContent")[0];
 
 window.addEventListener("scroll", ()=>{
     let value = window.scrollY;
-    heroContent.style.transform = `translateY(${value * -0.5}px)`;
+    heroContent.style.transform = `translateY(${value * -0.4}px)`;
 })
+
+const onClickFunction = () => {
+    document.body.classList.add("clicked")
+}
+
+
+// code for new isintersecting code ============================
+
+const observer = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add("show")
+        }
+    })
+})
+
+const hiddenElements = document.querySelectorAll(".hidden");
+const taglineHiddenElements = document.querySelectorAll(".taglineHidden")
+const rightHiddenElements = document.querySelectorAll(".rightHidden")
+
+hiddenElements.forEach((element) => observer.observe(element));
+taglineHiddenElements.forEach((element) => observer.observe(element));
+rightHiddenElements.forEach((element) => observer.observe(element));
+
+// health benefits images transition animation on IntersectionObserver
+
+
+
 
 
