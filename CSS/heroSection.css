@@ -2,6 +2,7 @@
   height: 90svh;
   max-width: 1600px;
   margin: auto;
+  margin-top: 4rem;
   background: linear-gradient(to top right, #ff2115 30%, #fe7b7b);
   border-radius: 0% 0% 30% 75%;
 }
