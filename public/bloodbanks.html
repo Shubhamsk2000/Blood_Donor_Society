@@ -2,69 +2,246 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="../assets/fevicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../CSS/main.css">
-    <link rel="stylesheet" href="../CSS/heroSection.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="../assets/fevicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../CSS/main.css" />
+  <link rel="stylesheet" href="../CSS/heroSection.css" />
+  <link rel="stylesheet" href="../CSS/bloodbankpage.css">
 
-    <style>
-        #preloader {
-            position: fixed;
-            background: #fff url("../assets/preloader.gif") no-repeat center;
-            background-size: 35%;
-            height: 100vh;
-            z-index: 1000;
-            width: 100%;
-        }
-    </style>
-    <title>Blood Banks in Pune</title>
+  <title>Blood Banks in Pune</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div id="navBar">
-                <div>
-                    <a href="/"><img id="logo" src="../assets/logo.png" draggable="false" alt="Blood Donor Society"></a>
-                </div>
-
-                <div class="menu-items">
-                    <ul>
-                        <li><a href="">Need Blood</a></li>
-                        <li><a href="">Blood Banks</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="/register" class="log-in-border">Log In</a></li>
-                    </ul>
-                </div>
-
-                <div class="menu-container">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <section id="section-bank">
-        <div class="container">
-            <div class="blood-bank hidden">
-                <div>
-                    <h2>Acharaya Anand Rishiji Blood Bank, Pune</h2>
-                   
-                    <div>
-                        <a href="https://poonahospital.org/"><span>https://poonahospital.org/</span></a>
-                        <p>020 6609 6000</p>
-                    </div>
-                </div>
-                <a href="https://maps.app.goo.gl/NmAmMTkDLx1nyNYH9">location</a>
-            </div>
+  <header>
+    <nav>
+      <div id="navBar">
+        <div>
+          <a href="/"><img id="logo" src="../assets/logo.png" draggable="false" alt="Blood Donor Society" /></a>
         </div>
-    </section>
-    <script src="../main.js"></script>
+
+        <div class="menu-items">
+          <ul>
+            <li><a href="">Need Blood</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="/register" class="log-in-border">Log In</a></li>
+          </ul>
+        </div>
+
+        <div class="menu-container">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section id="section-bank">
+    <div class="container">
+      <div class="blood-bank">
+        <div class="bank hidden">
+          <div class="text-box">
+            <h2>Acharaya Anand Rishiji Blood Bank, Pune</h2>
+            <i class="fa-duotone fa-hand-back-point-right"></i>
+            <a href="https://poonahospital.org/"><span>https://poonahospital.org/</span></a>
+            <p>020 6609 6000</p>
+          </div>
+          <br />
+          <a class="visit" href="https://maps.app.goo.gl/NmAmMTkDLx1nyNYH9" target="_blank">location</a>
+        </div>
+        <div class="bank hidden">
+          <div class="text-box">
+            <h2>Jankalyan Blood Centre</h2>
+            <br />
+            <i class="fa-duotone fa-hand-back-point-right"></i>
+            <a href="https://www.jankalyanbloodcentre.in/"><span>https://www.jankalyanbloodcentre.in/</span></a>
+            <p>020 2444 9527</p>
+          </div>
+          <br />
+          <a class="visit" target="_blank"
+            href="https://www.google.com/search?q=jankalyan+blood+bank&sxsrf=APwXEdcwneVGh3M84oAno8NFQfEQp4v7LQ%3A1688034680583&ei=eF2dZO-ZI_LvseMP2PiRuA8&gs_ssp=eJzj4tZP1zcsSTMwM04pM2C0UjWoME5KNko2MDQ0MzY3NjExN7UyqDBJMTe0TDU0TUoxSgIykr1EshLzshNzKhPzFJJy8vNTFJKAfADy0hXM&oq=janakalyan+bloo&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQARgAMg4ILhCvARDHARCKBRCRAjIOCC4QigUQxwEQrwEQkQIyDgguEIoFEMcBEK8BEJECMg4ILhCKBRDHARCvARCRAjINCC4QgAQQxwEQrwEQCjINCC4QgAQQxwEQrwEQCjIHCAAQgAQQCjIGCAAQFhAeMgYIABAWEB4yCggAEBYQHhAPEAoyHAguEK8BEMcBEIoFEJECEJcFENwEEN4EEOAEGAE6CggAEEcQ1gQQsAM6BwgjEIoFECc6CAgAEIoFEIYDOgUIABCABDoLCC4QgAQQxwEQrwE6CAgAEIoFEJECOgoIABCABBAUEIcCOgsILhCvARDHARCABEoECEEYAFDYCFiVJmDtMGgCcAF4AIAB1wGIAcQQkgEGMC4xMi4xmAEAoAEBwAEByAEI2gEGCAEQARgU&sclient=gws-wiz-serp#">location</a>
+        </div>
+        <div class="bank hidden">
+          <div class="text-box">
+            <h2>Red Cross Blood Bank</h2>
+            <br />
+            <i class="fa-duotone fa-hand-back-point-right"></i>
+            <a href="https://www.puneredcross.org/"><span>https://www.puneredcross.org/</span></a>
+            <p>7304922244</p>
+          </div>
+          <br />
+          <a class="visit" target="_blank" href="https://maps.app.goo.gl/EUDE2pJF91tMMMwC8">location</a>
+        </div>
+        <div class="bank hidden">
+          <div class="text-box">
+            <h2>Ruby Hall Clinic Pune</h2>
+            <br />
+            <i class="fa-duotone fa-hand-back-point-right"></i>
+            <a href="https://rubyhall.com/"><span>https://rubyhall.com/</span></a>
+            <p>2066455100</p>
+          </div>
+          <br />
+          <a class="visit" target="_blank" href="https://maps.app.goo.gl/ousebWrfueGJRT4w9">location</a>
+        </div>
+        <div class="bank hidden">
+          <div class="text-box">
+            <h2>Bharati Hospital Blood Bank</h2>
+            <br />
+            <i class="fa-duotone fa-hand-back-point-right"></i>
+            <a
+              href="https://bharatihealthcare.com/allopathy-pune/"><span>https://bharatihealthcare.com/allopathy-pune/</span></a>
+            <p>020 2437 5182/1116/ 3937</p>
+          </div>
+          <br />
+          <a class="visit" target="_blank" href="https://maps.app.goo.gl/GoFRxZ2WJQaz7rAE6">location</a>
+        </div>
+        <div class="bank hidden">
+          <div class="text-box">
+            <h2>Aditya Birla Memorial Hospital Blood Centre</h2>
+            <br />
+            <i class="fa-duotone fa-hand-back-point-right"></i>
+            <a
+              href="https://adityabirlahospital.com/aditya-birla-memorial-hospital-3-2-2-9/"><span>https://adityabirlahospital.com</span></a>
+            <p>020-30717664</p>
+          </div>
+          <br />
+          <a class="visit" target="_blank"
+            href="https://www.google.com/maps/dir//Aditya+Birla+Memorial+Hospital+Blood+Centre/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3bc2b90a70688d57:0x8721cf3aa393491e?sa=X&ved=2ahUKEwjhjcniq6f_AhXARmwGHQ2KChgQ9Rd6BAhDEAU">location</a>
+        </div>
+        <div class="bank hidden">
+          <div class="text-box">
+            <h2>Armed Forces Blood Centre</h2>
+            <br />
+            <i class="fa-duotone fa-hand-back-point-right"></i>
+            <a
+              href="https://www.health.mil/Military-Health-Topics/Health-Readiness/ASBP"><span>https://www.health.mil/Military-Health</span></a>
+            <p>9830765800</p>
+          </div>
+          <br />
+          <a class="visit" target="_blank"
+            href="https://www.google.com/maps/dir/18.4719759,73.8536679/Armed+Forces+Blood+Centre/@18.4884542,73.8556115,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3bc2c1cbd8e1e9af:0xbd81fed21137114e!2m2!1d73.8924823!2d18.5052084?entry=ttu">location</a>
+        </div>
+        <div class="bank hidden">
+          <div class="text-box">
+            <h2>AUTUS BLOOD CENTRE</h2>
+            <br />
+            <i class="fa-duotone fa-hand-back-point-right"></i>
+            <a href="https://autusbloodcentre.org/"><span>https://autusbloodcentre.org/</span></a>
+            <p>8600005558</p>
+          </div>
+          <br />
+          <a class="visit" target="_blank"
+            href="https://www.google.com/maps/dir//AUTUS+BLOOD+CENTRE/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3bc2b1b8fef554e5:0xf57803b9ec2a8ce6?sa=X&ved=2ahUKEwjXgJ62raf_AhWBnmMGHR3NAe4Q9Rd6BAhVEAQ">location</a>
+        </div>
+        <div class="bank hidden">
+          <div class="text-box">
+            <h2>Deenanath Mangeshkar Hospital & Research Center</h2>
+            <br />
+            <i class="fa-duotone fa-hand-back-point-right"></i>
+            <a href="https://www.dmhospital.org/"><span>https://www.dmhospital.org/</span></a>
+            <p>2040151000</p>
+          </div>
+          <br />
+          <a class="visit" target="_blank" href="https://maps.app.goo.gl/ousebWrfueGJRT4w9">location</a>
+        </div>
+        <div class="bank hidden">
+          <div class="text-box">
+            <h2>Deendayal Memorial Hospital Blood Bank</h2>
+            <br />
+            <i class="fa-duotone fa-hand-back-point-right"></i>
+            <a href="#"><span>NA</span></a>
+            <p>020 2565 2497/5657/ 3332</p>
+          </div>
+          <br />
+          <a class="visit" target="_blank"
+            href="https://maps.google.com/?cid=18403397523009187296&entry=gps">location</a>
+        </div>
+        <div class="bank hidden">
+          <div class="text-box">
+            <h2>Indian Serological Institute Blood Bank</h2>
+            <br />
+            <i class="fa-duotone fa-hand-back-point-right"></i>
+            <a href="#"><span>NA</span></a>
+            <p>7947139617</p>
+          </div>
+          <br />
+          <a class="visit" target="_blank" href="https://maps.app.goo.gl/X599bHS6AKY6rHAK9">location</a>
+        </div>
+        <div class="bank hidden">
+          <div class="text-box">
+            <h2>Akshay Blood Bank</h2>
+            <br />
+            <i class="fa-duotone fa-hand-back-point-right"></i>
+            <a href="#"><span>NA</span></a>
+            <p>020 2699 3247</p>
+          </div>
+          <br />
+          <a class="visit" target="_blank"
+            href="https://www.google.co.in/maps/dir//18.4959109,73.9477354/@18.496004,73.8777511,12z?entry=ttu">location</a>
+        </div>
+        <div class="bank hidden">
+          <div class="text-box">
+            <h2>Moraya Blood Bank</h2>
+            <br />
+            <i class="fa-duotone fa-hand-back-point-right"></i>
+            <a href="#"><span>NA</span></a>
+            <p>020 2746 2000</p>
+          </div>
+          <br />
+          <a class="visit" target="_blank"
+            href="https://www.google.com/maps/place/18%C2%B038'39.9%22N+73%C2%B047'59.1%22E/@18.6444278,73.7997469,17z/data=!3m1!4b1!4m4!3m3!8m2!3d18.6444278!4d73.7997469?entry=ttu">location</a>
+        </div>
+        <div class="bank hidden">
+          <div class="text-box">
+            <h2>Chakan Blood Centre</h2>
+            <br />
+            <i class="fa-duotone fa-hand-back-point-right"></i>
+            <a href="#"><span>NA</span></a>
+            <p>9975564130, 9021868968</p>
+          </div>
+          <br />
+          <a class="visit" target="_blank"
+            href="https://www.google.com/maps/dir/18.4719759,73.8536679/chakan+blood+centre/@18.6186858,73.7185398,11z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3bc2cbc51ecfcaf9:0x217758e048539d0d!2m2!1d73.858847!2d18.766241?entry=ttu">location</a>
+        </div>
+        <div class="bank hidden">
+          <div class="text-box">
+            <h2>Inlaks & Budharani Hospital Blood Bank</h2>
+            <br />
+            <i class="fa-duotone fa-hand-back-point-right"></i>
+            <a href="#"><span>NA</span></a>
+            <p>06384491982</p>
+          </div>
+          <br />
+          <a class="visit" target="_blank" href="https://maps.app.goo.gl/ZznAzUVR4pU7ZJGT8">location</a>
+        </div>
+        <div class="bank hidden">
+          <div class="text-box">
+            <h2>Golden Care Hospital And Diagnostic</h2>
+            <br />
+            <i class="fa-duotone fa-hand-back-point-right"></i>
+            <a href="#"><span>NA</span></a>
+            <p>844 844 4867</p>
+          </div>
+          <br />
+          <a class="visit" target="_blank"
+            href="https://www.google.com/maps/dir//Golden+Care+Hospital+And+Diagnostic/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3bc2bbd7e16b79d7:0x761ee80b381cb318?sa=X&ved=2ahUKEwj565rAh-n_AhUpqWMGHdEbCisQ9Rd6BAhYEAA&ved=2ahUKEwj565rAh-n_AhUpqWMGHdEbCisQ9Rd6BAhpEAU">location</a>
+        </div>
+        <div class="bank hidden">
+          <div class="text-box">
+            <h2>Sasoon General Hospital</h2>
+            <br />
+            <i class="fa-duotone fa-hand-back-point-right"></i>
+            <a href="#"><span>NA</span></a>
+            <p>020 2610 2310</p>
+          </div>
+          <br />
+          <a class="visit" target="_blank"
+            href="https://www.google.com/maps/dir/18.4489388,73.8536679/Sasoon+General+Hospital/@18.4875426,73.8280069,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3bc2c11a2a73bbfd:0x5b443b96bece1528!2m2!1d73.8706347!2d18.5258008?entry=ttu">location</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="../main.js"></script>
 </body>
 
 </html>

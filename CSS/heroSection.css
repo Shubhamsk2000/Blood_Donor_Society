@@ -179,6 +179,9 @@
   .eligible {
     flex-direction: column;
   }
+  #info-eligible h2{
+    font-size: 30px;
+  }
 }
 
 /* footer css */
@@ -236,17 +239,4 @@
   height: 3rem;
 }
 
-/* BLOOD BANK HTML css========= */
-#section-bank {
-  position: relative;
-  /* top: 4.6rem; */
-}
 
-.container {
-  border: 2px solid red;
-  margin: 1rem;
-}
-
-.container h2 {
-  font-weight: 500;
-}

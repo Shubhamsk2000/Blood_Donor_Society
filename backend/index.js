@@ -5,10 +5,10 @@ const path = require('path')
 
 app.use(express.static(path.join(__dirname,'../')))
 
-
 app.get('/register', (req, res) => {
   res.sendFile(path.join(__dirname,'../public/registration.html'))
 })
+
 app.get('/blood banks', (req, res) => {
   res.sendFile(path.join(__dirname,'../public/bloodbanks.html'))
 })
