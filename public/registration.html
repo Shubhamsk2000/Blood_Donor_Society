@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../assets/fevicon.png" />
+
     <title>Login & Register </title>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -16,11 +17,10 @@
 </head>
 
 <body>
-    <div id="preloader"></div>
     <div class="container registration-mode">
         <div id="home-return">
             <a href="/">
-                <span class="material-symbols-outlined">
+                <span class="material-symbols-outlined back-icon">
                     navigate_before
                 </span>
                 <span>Go back</span>
@@ -28,8 +28,8 @@
         </div>
         <div class="forms-container">
             <div class="registration-login">
-
-                <form action="" class="login-form" id="login">
+                <!--------------- login form section ---------------->
+                <form action="/login" class="login-form" id="login">
                     <h2 class="title">Log In</h2>
 
                     <div class="input-field">
@@ -42,29 +42,48 @@
                         <input type="password" placeholder="Password">
                     </div>
 
-                    <input type="submit" value="log in" class="btn solid">
+                    <input type="submit" value="login" class="btn solid">
 
                 </form>
 
-                <form action="" class="registration-form" id="registration">
+                <!--------------- registration form section ---------------->
+
+                <form action="/register" method="POST" class="registration-form" id="registration">
                     <h2 class="title">Registration</h2>
 
                     <div class="input-field">
                         <span class="material-symbols-outlined">person</span>
-                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Name" name="name">
                     </div>
 
                     <div class="input-field">
                         <span class="material-symbols-outlined">mail</span>
-                        <input type="email" placeholder="Email">
+                        <input type="email" placeholder="Email" name="email">
                     </div>
 
                     <div class="input-field">
                         <span class="material-symbols-outlined">key</span>
-                        <input type="password" placeholder="Password">
+                        <input type="password" placeholder="Password" name="password">
+                    </div>
+                    <div class="input-field blood-type-container">
+                        <span class="material-symbols-outlined">
+                            bloodtype
+                            </span>
+                        <label for="bloodgroup">Select blood group : </label>
+                        <select name="blood-type" id="blood-type">
+                            <option value="A-P">A+</option>
+                            <option value="A-N">A-</option>
+                            <option value="O-P">O+</option>
+                            <option value="O-N">O-</option>
+                            <option value="B-P">B+</option>
+                            <option value="B-N">B−</option>
+                            <option value="AB-P">AB+</option>
+                            <option value="AB-N">AB-</option>
+                            <option value="NA" disabled >🦎 Green</option>
+                        </select>
                     </div>
 
-                    <input type="submit" value="Sign up" class="btn solid">
+                    <input type="submit" value="register" class="btn solid">
 
                 </form>
             </div>
@@ -88,27 +107,21 @@
             </div>
         </div>
     </div>
-    
-   <script>// js for registration mode toggle in registration.html
-    const registerBtn = document.querySelector("#registration-btn");
-    const loginBtn = document.querySelector("#login-btn");
-    const container = document.querySelector(".container");
-    
-    registerBtn.addEventListener('click', () => {
-        container.classList.toggle("registration-mode")
-    });
-    loginBtn.addEventListener('click', () => {
-        container.classList.toggle("registration-mode")
-    })
-    var loader = document.getElementById("preloader");
-    window.addEventListener("load", function () {
-        loader.style.display = "none";
-    })
-    
-    var loader = document.getElementById("preloader");
-    window.addEventListener("load", function () {
-        loader.style.display = "none";
-    })</script>
+
+    <script>// js for registration mode toggle in registration.html
+        const registerBtn = document.querySelector("#registration-btn");
+        const loginBtn = document.querySelector("#login-btn");
+        const container = document.querySelector(".container");
+
+        registerBtn.addEventListener('click', () => {
+            container.classList.toggle("registration-mode")
+        });
+        loginBtn.addEventListener('click', () => {
+            container.classList.toggle("registration-mode")
+        })
+
+
+    </script>
 </body>
 
 </html>

@@ -32,6 +32,13 @@
   top: 2rem;
   left: 2rem;
 }
+.back-icon{
+  transition:all 0.5s;
+}
+
+#home-return:hover .back-icon{
+transform: translateX(-40%);
+}
 
 #home-return a {
   text-decoration: none;
@@ -337,4 +344,20 @@ form.registration-form {
     bottom: 28%;
     left: 50%;
   }
+}
+
+
+#blood-type{
+  font-size: 20px;
+  border-radius: 23px;
+  padding-inline: 0.5rem;
+  
+}
+.blood-type-container{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem;
+  padding: 1rem 2rem;
 }
