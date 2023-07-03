@@ -15,8 +15,6 @@ hamMenu.addEventListener('click', () => {
 
     returnValue = line.classList.contains("line-1")
     returnValue === true ? menu.classList.add("transform") : menu.classList.remove("transform")
-
-   
 });
 
 let heroContent = document.getElementsByClassName("heroContent")[0];
