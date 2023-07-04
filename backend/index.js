@@ -19,14 +19,23 @@ app.get('/register', (req, res) => {
 app.post('/register', async (req, res) => {
   try {
 
-    console.log(req.body)
-    res.send(req.body)
+    const userData = new Register({
+      name : req.body.name,
+      email : req.body.email,
+      phone : req.body.phone,
+      password : req.body.password,
+      bloodtype : req.body.bloodtype
+    })
+
+    const registered = await userData.save();
+  res.sendFile(path.join(__dirname, '../public/findDonor.html'))
+    
 
   } catch (error) {
     res.status(400).send(error)
   }
 })
-
+  
 app.get('/bloodbanks', (req, res) => {
   res.sendFile(path.join(__dirname, '../public/bloodbanks.html'))
 })

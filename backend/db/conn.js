@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/UserRegistration').then(() => {
+mongoose.connect('mongodb+srv://hp15series:hp15series@cluster0.kscvv9n.mongodb.net/?retryWrites=true&w=majority').then(() => {
     console.log(`DB connection successful`);
 }).catch((e) => {
     console.log(`connection failed` , e);

@@ -18,6 +18,10 @@ const userDataSchema = new mongoose.Schema({
     password : {
         type : String,
         required : true
+    },
+    bloodtype : {
+        type : String,
+        require : false
     }
 })
 
