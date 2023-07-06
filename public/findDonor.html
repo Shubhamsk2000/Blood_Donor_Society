@@ -9,10 +9,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  
+    <style>
+      .preloader {
+        position: fixed;
+        background: #fff url("../assets/preloader.gif") no-repeat center;
+        background-size: 35%;
+        height: 100vh;
+        z-index: 1000;
+        width: 100%;
+      }
+    </style>
     <title>Search for Donor </title>
 </head>
 <body>
+  <div class="preloader"></div>
+
     <header>
         <nav>
           <div id="navBar">
@@ -133,6 +144,11 @@
     
 
 <script src="../main.js"></script>
-      
+<script>
+  var loader = document.getElementsByClassName("preloader")[0];
+  window.addEventListener("load", function () {
+    loader.style.display = "none";
+  })
+</script>
 </body>
 </html>

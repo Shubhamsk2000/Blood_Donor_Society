@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
-    #preloader {
+    .preloader {
       position: fixed;
       background: #fff url("../assets/preloader.gif") no-repeat center;
       background-size: 35%;
@@ -25,7 +25,7 @@
 </head>
 
 <body>
-  <div id="preloader"></div>
+  <div class="preloader"></div>
   <header>
     <nav>
       <div id="navBar">
@@ -243,7 +243,7 @@
   <script src="main.js"></script>
 
   <script>
-    var loader = document.getElementById("preloader");
+    var loader = document.getElementsByClassName("preloader")[0];
     window.addEventListener("load", function () {
       loader.style.display = "none";
     })
