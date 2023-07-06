@@ -19,9 +19,11 @@ hamMenu.addEventListener('click', () => {
 
 let heroContent = document.getElementsByClassName("heroContent")[0];
 
+
 window.addEventListener("scroll", ()=>{
     let value = window.scrollY;
     heroContent.style.transform = `translateY(${value * -0.4}px)`;
+
 })
 
 const onClickFunction = () => {
@@ -48,7 +50,6 @@ taglineHiddenElements.forEach((element) => observer.observe(element));
 rightHiddenElements.forEach((element) => observer.observe(element));
 
 // health benefits images transition animation on IntersectionObserver
-
 
 
 

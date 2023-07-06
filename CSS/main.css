@@ -549,7 +549,121 @@ recovery section css
   }
 }
 
-/* common classes */
+/*_________ CSS FOR FIND DONOR PAGE __________ */
+
+.first-section-bd{
+  background: #ff4b42;
+  height: 100svh;
+  position: sticky;
+  top: 0;
+  z-index: -10;
+  overflow: hidden;
+
+  
+  
+}
+.slider-container{
+  max-width: 1600px;
+  margin: auto;
+  height: 80svh;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  /* gap: 1rem; */
+  background: white;
+  border-radius: 0% 0% 50% 50%;
+  overflow: hidden;
+
+}
+.columns{
+  width: 150px;
+  margin-inline:0.5rem ;
+  
+}
+.columns:nth-child(1){
+  animation: motionX 56s  infinite backwards alternate;
+}
+.columns:nth-child(2){
+  animation: motionX 40s  infinite backwards alternate;
+}
+.columns:nth-child(3){
+  animation: motionX 34s  infinite backwards alternate;
+}
+.columns:nth-child(4){
+  animation: motionX 50s  infinite backwards alternate;
+}
+.columns:nth-child(5){
+  animation: motionX 45s  infinite backwards alternate;
+}
+.columns:nth-child(6){
+  animation: motionX 33s  infinite backwards alternate;
+}
+.columns:nth-child(7){
+  animation: motionX 44s  infinite backwards alternate;
+}
+.columns:nth-child(8){
+  animation: motionX 69s  infinite backwards alternate;
+}
+.columns:nth-child(9){
+  animation: motionX 90s  infinite backwards alternate;
+}
+
+
+.img-container-bd{
+  height: 200px;
+  /* border: 2px solid black; */
+  margin-top: 1rem;
+  background-image: url('../assets/homepage.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.one .img-container-bd:nth-child(1){
+  background-image: url('../assets/finddonor/1.jpg');
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+.two .img-container-bd:nth-child(1){
+  background-image: url('../assets/finddonor/1.jpg');
+}
+
+
+.userInfo{
+  /* max-width: 1300px; */
+  
+  border: 2px solid red;
+  backdrop-filter: blur(5px);
+  padding: 1.5rem;
+  padding-left: 5rem;
+}
+
+.scroll{
+  position: absolute;
+  top: 90svh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@keyframes motionX {
+  0%{
+    transform: translateY(0%);
+  }
+  100%{
+    transform: translateY(-100%);
+
+  }
+}
+@media(max-width:650px){
+  .first-section-bd{
+    display: none;
+  }
+  .userInfo{
+    padding-left: 1rem
+  }
+}
+
+/* COMMON CLASSES */
 .text-white {
   color: #fff;
 }
