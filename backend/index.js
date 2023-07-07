@@ -79,7 +79,7 @@ function addUserDataToHTML(html, userData) {
       <div class="userInfo">
         
         <h3>Name: ${user.name}</h3>
-        <h4>Name: ${user.bloodtype}</h4>
+        <h4>Blood Type: ${user.bloodtype}</h4>
         <p>Email: ${user.email}</p>
 
       </div>
